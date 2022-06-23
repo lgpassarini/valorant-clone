@@ -1,0 +1,92 @@
+.menu-bg {
+  background: #222;
+  padding: 40px 0;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Staatliches", cursive;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.35rem;
+  padding: 20px 20px 20px 20px;
+  transition: 0.1s;
+}
+
+.menu-list li a:hover {
+  border-bottom: 4px solid rgb(244, 41, 41);
+  background: #222;
+}
+
+.menu-btn {
+  background: rgb(218, 72, 72);
+  background: linear-gradient(
+    265deg,
+    rgba(218, 72, 72, 1) 12%,
+    rgba(222, 76, 76, 1) 28%,
+    rgba(222, 56, 56, 1) 79%
+  );
+  padding: 10px 40px !important;
+  margin-left: 100px;
+  border-radius: 100px;
+}
+
+.menu-btn:hover {
+  border: none !important;
+  background: rgb(218, 72, 72);
+  background: linear-gradient(
+    265deg,
+    rgba(218, 72, 72, 1) 12%,
+    rgba(222, 76, 76, 1) 28%,
+    rgba(222, 56, 56, 1) 79%
+  ) !important;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+@media (max-width: 1500px) {
+  .menu-list {
+    display: none;
+  }
+
+  .menu-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 30px;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  .menu-mobile {
+    display: block;
+    padding: 10px;
+    background: rgb(63, 63, 63);
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  .menu-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,114 @@
+.content-bg {
+  height: 800px;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url(../img/main-img.jpg);
+  background-size: cover;
+}
+
+.content-info {
+  font-family: "Staatliches", cursive;
+  padding-bottom: 120px;
+}
+
+.content-info h1 {
+  max-width: max-content;
+  font-size: 6rem;
+  color: white;
+  white-space: nowrap;
+}
+
+.content-info p {
+  font-size: 1.8rem;
+  max-width: fit-content;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.content-button {
+  display: block;
+  max-width: max-content;
+  text-decoration: none;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), red;
+  font-size: 5rem;
+  color: white;
+  padding: 10px 30px;
+}
+
+body {
+  height: 3000px;
+  background-color: #222;
+}
+
+.content-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 800px auto;
+  align-items: center;
+  justify-items: center;
+  padding-left: 40px;
+  gap: 20px;
+}
+.content-img img {
+  height: 950px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 1050px) {
+  .content-container {
+    grid-template-columns: 100%;
+    padding: 250px 0 0 0;
+  }
+  .content-img {
+    display: none;
+  }
+  .content-info {
+    justify-self: center;
+    text-align: center;
+  }
+  .content-button {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 770px) {
+  .content-container {
+    justify-items: center;
+  }
+
+  .content-info h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .content-bg {
+    background-position: center top;
+  }
+
+  .content-info h1 {
+    font-size: 4rem;
+  }
+  .content-button {
+    font-size: 2.25rem;
+    padding: 10px 50px;
+  }
+  .content-container {
+    padding: 130px 20px;
+  }
+  .content-bg {
+    height: 450px;
+  }
+}
+
+@media (max-width: 450px) {
+  .content-info h1 {
+    font-size: 3.35rem;
+  }
+
+  .content-info p {
+    font-size: 1.25rem;
+  }
+}
