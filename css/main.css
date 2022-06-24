@@ -1,27 +1,40 @@
 .content-bg {
-  height: 800px;
+  height: 900px;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
     url(../img/main-img.jpg);
   background-size: cover;
+  box-shadow: inset 0 -200px #222;
+  padding: 0 20px;
+}
+
+.content-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 800px;
+  gap: 20px;
 }
 
 .content-info {
-  font-family: "Staatliches", cursive;
-  padding-bottom: 120px;
+  font-family: "Titillium Web", sans-serif;
+  align-self: center;
 }
 
 .content-info h1 {
   max-width: max-content;
-  font-size: 6rem;
+  font-size: 5rem;
   color: white;
   white-space: nowrap;
+  margin-bottom: 16px;
+  text-transform: uppercase;
 }
 
 .content-info p {
   font-size: 1.8rem;
-  max-width: fit-content;
-  margin-bottom: 16px;
+  max-width: 40ch;
+  margin-bottom: 32px;
   color: white;
 }
 
@@ -29,37 +42,30 @@
   display: block;
   max-width: max-content;
   text-decoration: none;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), red;
-  font-size: 5rem;
+  background: rgb(216, 67, 67);
+  font-size: 3rem;
   color: white;
   padding: 10px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-body {
-  height: 3000px;
-  background-color: #222;
-}
-
-.content-container {
-  max-width: 1500px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 800px auto;
-  align-items: center;
-  justify-items: center;
-  padding-left: 40px;
-  gap: 20px;
+.content-img {
+  justify-self: center;
 }
 .content-img img {
-  height: 950px;
+  max-height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1080px) {
   .content-container {
     grid-template-columns: 100%;
-    padding: 250px 0 0 0;
+  }
+  .content-bg {
+    box-shadow: none;
+    height: 800px;
   }
   .content-img {
     display: none;
@@ -79,36 +85,35 @@ body {
   }
 
   .content-info h1 {
-    font-size: 6rem;
+    font-size: 4.6rem;
+    margin: 0 auto;
   }
 }
 
-@media (max-width: 590px) {
+@media (max-width: 630px) {
   .content-bg {
     background-position: center top;
+    height: 500px;
   }
 
   .content-info h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .content-button {
     font-size: 2.25rem;
     padding: 10px 50px;
   }
   .content-container {
-    padding: 130px 20px;
-  }
-  .content-bg {
-    height: 450px;
+    grid-template-rows: 500px;
   }
 }
 
 @media (max-width: 450px) {
   .content-info h1 {
-    font-size: 3.35rem;
+    font-size: 2.5rem;
   }
 
   .content-info p {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
   }
 }

@@ -1,0 +1,106 @@
+.dinamico-escolha {
+  background: rgb(216, 67, 67);
+  box-shadow: inset -30vw 0 #222;
+  padding: 60px;
+  margin-bottom: 120px;
+}
+
+.dinamico-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  gap: 60px;
+}
+
+.escolha-gif {
+  align-self: center;
+}
+
+.escolha-info {
+  font-family: "Titillium Web", sans-serif;
+  line-height: 1.8;
+}
+
+.escolha-info h2 {
+  font-size: 4rem;
+  color: white;
+}
+.escolha-info p {
+  font-size: 2rem;
+  color: #222;
+}
+
+.dinamico-amigos {
+  background: white;
+  box-shadow: inset 30vw 0 #222;
+  padding: 60px;
+  margin-bottom: 120px;
+}
+
+.amigos-gif {
+  align-self: center;
+}
+.amigos-info {
+  font-family: "Titillium Web", sans-serif;
+  line-height: 1.8;
+}
+
+.amigos-info h2 {
+  font-size: 4rem;
+  color: rgb(216, 67, 67);
+}
+.amigos-info p {
+  font-size: 2rem;
+  color: #222;
+}
+
+@media (max-width: 1250px) {
+  .dinamico-container {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+  }
+
+  .amigos-info,
+  .escolha-info {
+    margin: 0 auto;
+  }
+
+  .dinamico-escolha {
+    margin-bottom: 0;
+  }
+
+  .dinamico-escolha,
+  .dinamico-amigos {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .escolha-gif,
+  .amigos-gif {
+    display: none;
+  }
+
+  .dinamico-escolha {
+    margin-bottom: 0;
+    padding: 40px;
+  }
+
+  .escolha-info h2 {
+    font-size: 2.5rem;
+  }
+
+  .escolha-info p {
+    font-size: 1.25rem;
+  }
+
+  .amigos-info h2 {
+    font-size: 2.5rem;
+  }
+
+  .amigos-info p {
+    font-size: 1.25rem;
+  }
+}
