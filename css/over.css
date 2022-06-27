@@ -28,3 +28,28 @@ body {
   position: relative;
   height: 2000px;
 }
+
+.site {
+  display: none;
+}
+
+.loading-box {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  padding-top: 45vh;
+}
+
+@keyframes load {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loading-img {
+  background: url(../img/loading.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 56x;
+  height: 56px;
+  animation: load 2s infinite linear;
+}

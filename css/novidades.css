@@ -34,17 +34,12 @@
   cursor: pointer;
   flex: 1 1 400px;
   position: relative;
-  transform: scale(0.9);
   transition: 0.4s;
-}
-
-.novidades-item:hover {
-  transform: scale(0.95);
 }
 
 .novidades-item.passe {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1)),
-    url(../img/battle-pass.jpg);
+    url(../img/battle-pass-comp.jpg);
   background-size: cover;
   background-position: center;
 }
