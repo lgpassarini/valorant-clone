@@ -1,0 +1,61 @@
+.footer-logo {
+  margin-top: 8px;
+  max-width: 200px;
+}
+.footer {
+  background-color: rgb(16, 16, 16);
+  padding: 180px 60px 60px 60px;
+}
+
+.footer h3 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2rem;
+  color: rgb(216, 67, 67);
+  margin-bottom: 16px;
+}
+.footer-container {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  align-content: start;
+}
+
+.footer ul {
+  list-style: none;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.footer ul a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.footer ul a:hover {
+  color: rgb(216, 67, 67);
+}
+
+.footer span {
+  margin-top: 64px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.25rem;
+  color: white;
+  display: block;
+}
+
+@media (max-width: 1050px) {
+  .footer {
+    padding: 60px;
+  }
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-logo {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .footer-assistencia li {
+    margin-bottom: 16px;
+  }
+}

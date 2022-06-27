@@ -26,6 +26,8 @@
 .escolha-info h2 {
   font-size: 4rem;
   color: white;
+  line-height: 1.2;
+  margin-bottom: 12px;
 }
 .escolha-info p {
   font-size: 2rem;
@@ -50,6 +52,8 @@
 .amigos-info h2 {
   font-size: 4rem;
   color: rgb(216, 67, 67);
+  line-height: 1.2;
+  margin-bottom: 12px;
 }
 .amigos-info p {
   font-size: 2rem;
